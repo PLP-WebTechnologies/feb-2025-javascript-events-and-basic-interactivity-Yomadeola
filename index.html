@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JS Event Playground</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>JS Event Handling Playground 🎯</h1>
+  </header>
+
+  <main>
+    <!-- Button Interaction -->
+    <section>
+      <button id="magic-btn">Click Me</button>
+      <p id="btn-text">Nothing has happened... yet.</p>
+    </section>
+
+    <!-- Hover Image -->
+    <section>
+      <img id="hover-img" src="https://via.placeholder.com/150" alt="Hover Me!" />
+    </section>
+
+    <!-- Tab Navigation -->
+    <section class="tabs">
+      <div class="tab-buttons">
+        <button class="tab" data-tab="1">Tab 1</button>
+        <button class="tab" data-tab="2">Tab 2</button>
+        <button class="tab" data-tab="3">Tab 3</button>
+      </div>
+      <div class="tab-content" id="tab-1">Welcome to Tab 1</div>
+      <div class="tab-content hidden" id="tab-2">This is Tab 2 Content</div>
+      <div class="tab-content hidden" id="tab-3">Here’s Tab 3 with more stuff</div>
+    </section>
+
+    <!-- Keypress -->
+    <section>
+      <input type="text" id="key-input" placeholder="Type something..." />
+      <p id="key-display"></p>
+    </section>
+
+    <!-- Form -->
+    <section>
+      <form id="signup-form" novalidate>
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="password" id="password" placeholder="Password (min 8 chars)" required />
+        <button type="submit">Submit</button>
+        <p id="form-feedback"></p>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
